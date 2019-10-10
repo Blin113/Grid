@@ -1,0 +1,50 @@
+	body{
+        font-family: "helvetica";
+    }	
+	
+	.back{
+		background-color: #9CCFB8;
+	}
+	
+	.picsize{
+		height: 75%;
+	}
+	.wrapper{
+		display: grid;
+		grid-template-areas: 
+			'header'
+			'main';
+		overflow; scroll;
+	}
+	
+	header{
+		grid-area: header;
+		background-color: green;
+	}
+	
+	main{
+		grid-area: main;
+		display: grid;
+		grid-template-rows: 100px 100px;
+		grid-template-areas: 's1 s2 s3'
+							 's1 s2 s3';
+	}
+	
+	section{
+		font-size: 15px;
+	}
+	
+	section:first-child{
+		grid-area: s1;
+		background-color: lightblue;
+	}
+
+	section:nth-child(2){
+		grid-area: s2;
+		background-color: lightgrey;
+	}
+	
+	section:nth-child(3){
+		grid-area: s3;
+		background-color: lightgreen;
+	}
